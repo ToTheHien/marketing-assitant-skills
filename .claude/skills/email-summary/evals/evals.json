@@ -1,0 +1,89 @@
+{
+  "skill_name": "email-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Kiểm tra email 7 ngày gần nhất cho tôi, tổng hợp và phân loại xem có email nào quan trọng cần trả lời không",
+      "expected_output": "Bảng tổng hợp email với phân loại theo loại và mức độ ưu tiên. Các email ưu tiên Khẩn cấp và Cao phải có đề xuất phản hồi dựa trên template.",
+      "assertions": [
+        {
+          "name": "has_summary_table",
+          "description": "Output có bảng tổng quan với cột Từ, Tiêu đề, Loại, Ưu tiên, Ngày",
+          "type": "contains_all",
+          "values": ["Từ", "Tiêu đề", "Loại", "Ưu tiên", "Ngày"]
+        },
+        {
+          "name": "has_priority_labels",
+          "description": "Output dùng ít nhất một trong 4 mức ưu tiên",
+          "type": "contains_any",
+          "values": ["Khẩn cấp", "Cao", "Trung bình", "Thấp"]
+        },
+        {
+          "name": "has_category_grouping",
+          "description": "Output có phần phân loại theo nhóm",
+          "type": "contains",
+          "value": "Phân loại theo nhóm"
+        },
+        {
+          "name": "has_reply_suggestions",
+          "description": "Output có phần đề xuất phản hồi",
+          "type": "contains_any",
+          "values": ["Đề xuất phản hồi", "Phản hồi:", "draft"]
+        }
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Xem mail 3 ngày qua, tối đa 10 email. Tôi cần biết có email nào từ đối tác hay nhà đầu tư không, và soạn sẵn phản hồi cho tôi.",
+      "expected_output": "Tổng hợp email 3 ngày, chú trọng nhận dạng email loại hop-tac và nha-dau-tu. Template phản hồi được điền sẵn thông tin cụ thể từ email gốc.",
+      "assertions": [
+        {
+          "name": "correct_time_range",
+          "description": "Output đề cập đến khoảng thời gian 3 ngày",
+          "type": "contains_any",
+          "values": ["3 ngày", "3 ngay"]
+        },
+        {
+          "name": "identifies_partner_emails",
+          "description": "Output nhận dạng được loại email hợp tác hoặc nhà đầu tư",
+          "type": "contains_any",
+          "values": ["hop-tac", "hợp tác", "nha-dau-tu", "nhà đầu tư", "đối tác", "Hợp tác", "Nhà đầu tư"]
+        },
+        {
+          "name": "has_drafted_reply",
+          "description": "Output bao gồm nội dung phản hồi được soạn sẵn",
+          "type": "contains_any",
+          "values": ["Kính gửi", "Trân trọng", "Cảm ơn"]
+        }
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Tổng hợp inbox tuần này cho tôi, có email khiếu nại nào không? Nếu có tạo draft trả lời ngay đi.",
+      "expected_output": "Tổng hợp email tuần (7 ngày), nhận diện và nổi bật email khiếu nại (khieu-nai) với mức ưu tiên cao. Nếu có khiếu nại, chuẩn bị nội dung phản hồi template 6 và offer tạo Gmail draft.",
+      "assertions": [
+        {
+          "name": "complaint_handling",
+          "description": "Output nhận dạng hoặc tìm kiếm email khiếu nại",
+          "type": "contains_any",
+          "values": ["khiếu nại", "khieu-nai", "phản ánh", "Khiếu nại"]
+        },
+        {
+          "name": "draft_creation_offered",
+          "description": "Output đề xuất tạo draft hoặc thực hiện tạo draft",
+          "type": "contains_any",
+          "values": ["draft", "tạo draft", "create_draft", "soạn", "gửi"]
+        },
+        {
+          "name": "urgency_flagged",
+          "description": "Email khiếu nại được đánh dấu ưu tiên cao hoặc khẩn cấp",
+          "type": "contains_any",
+          "values": ["Khẩn cấp", "🔴", "Cao", "🟠", "24h", "ưu tiên"]
+        }
+      ],
+      "files": []
+    }
+  ]
+}

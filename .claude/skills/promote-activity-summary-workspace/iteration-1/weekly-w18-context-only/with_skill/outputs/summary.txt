@@ -1,0 +1,66 @@
+BÁO CÁO HOẠT ĐỘNG XÚC TIẾN ĐẦU TƯ TUẦN 18 (28/04 – 02/05/2026)
+File output: promote_activity_weekly_2026-W18.docx
+Ngày lập: 02/05/2026
+Nguồn dữ liệu: Context người dùng cung cấp (không có file tham chiếu đính kèm)
+
+──────────────────────────────────────────
+CÁC SECTION ĐÃ ĐƯA VÀO BÁO CÁO
+──────────────────────────────────────────
+
+[HEADER]
+  - Tiêu đề: BÁO CÁO HOẠT ĐỘNG XÚC TIẾN ĐẦU TƯ TUẦN
+  - Kỳ báo cáo: Tuần 18 | 28/04 – 02/05/2026
+  - Ngày lập: 02/05/2026
+
+[SECTION I] TÓM TẮT ĐIỀU HÀNH
+  - Số cuộc gặp nhà đầu tư tiềm năng: 3
+  - Số hoạt động phòng thương mại/hiệp hội: 1 (KOCHAM – 02/05/2026)
+  - Số sự kiện tham dự/tổ chức: 0
+  - 4 điểm nổi bật (Samsung C&T site visit, Foxconn online meeting,
+    công ty Nhật qua email, KOCHAM giới thiệu 2 leads mới)
+  - Leads mới: 3 công ty trực tiếp + 2 giới thiệu qua KOCHAM
+
+[SECTION II] GẶP GỠ NHÀ ĐẦU TƯ TIỀM NĂNG
+  Bảng tổng hợp (3 dòng, màu pipeline chuẩn):
+    1. Samsung C&T | Hàn Quốc | Logistics | Site visit | Đang quan tâm (xanh lá)
+    2. Foxconn | Đài Loan | Điện tử | Online meeting | Đang đàm phán (vàng)
+    3. Công ty Nhật (chưa tiết lộ tên) | Nhật Bản | Linh kiện ô tô | Email | Mới tiếp cận (xanh nhạt)
+
+  Chi tiết từng cuộc gặp:
+    - Samsung C&T: 5 ha VSIP II, site visit 29/04, gửi proposal deadline 07/05
+    - Foxconn: MTPII, online meeting 30/04, đang đàm phán giá
+    - Công ty Nhật: 2 ha, liên hệ qua email, mới tiếp cận
+
+[SECTION III] HOẠT ĐỘNG PHÒNG THƯƠNG MẠI & HIỆP HỘI
+  - KOCHAM | Cuộc họp kết nạp thành viên mới | 02/05/2026
+    Kết quả: 2 công ty Hàn Quốc tiềm năng được giới thiệu
+    Follow-up: Liên hệ trực tiếp để đặt lịch gặp
+
+[SECTION IV] SỰ KIỆN XÚC TIẾN ĐẦU TƯ
+  - Không có sự kiện trong tuần 18
+
+[SECTION V] KẾ HOẠCH TUẦN TỚI (Tuần 19 — 05/05 – 09/05/2026)
+  - 07/05/2026: Họp với JETRO
+  - Gửi proposal cho Samsung C&T (deadline 07/05)
+  - Tiếp tục đàm phán với Foxconn
+  - Phản hồi email công ty Nhật Bản
+  - Liên hệ 2 công ty Hàn Quốc từ KOCHAM
+
+[PHỤ LỤC] Chú giải màu trạng thái Pipeline
+  - Mới tiếp cận: #D6E4F0 (Xanh nhạt)
+  - Đang quan tâm: #92D050 (Xanh lá)
+  - Đang đàm phán: #FFFF00 (Vàng)
+  - Chờ quyết định: #FFC000 (Cam)
+
+[FOOTER]
+  - Người lập: _____________ | Ngày: 02/05/2026 | Phân phối: Ban lãnh đạo
+
+──────────────────────────────────────────
+GHI CHÚ
+──────────────────────────────────────────
+- Các trường [Cần bổ sung]: Người phụ trách từng cuộc gặp,
+  deadline follow-up của Foxconn và công ty Nhật, tên công ty Nhật Bản,
+  hình thức/địa điểm cuộc họp JETRO 07/05.
+- Màu sắc chuẩn Becamex đã áp dụng: header #1F4E79, accent #2E75B6,
+  zebra rows #D6E4F0.
+- Pipeline status nhất quán theo 4 trạng thái chuẩn.

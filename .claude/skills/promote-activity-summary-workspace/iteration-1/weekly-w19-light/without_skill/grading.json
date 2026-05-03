@@ -1,0 +1,50 @@
+{
+  "run_id": "weekly-w19-light-without_skill",
+  "file": "/home/thehien/Projects/becamex/marketing_assitance_skills/.claude/skills/promote-activity-summary-workspace/iteration-1/weekly-w19-light/without_skill/outputs/promote_activity_weekly_2026-W19.docx",
+  "file_size_kb": 36,
+  "assertions_passed": 7,
+  "assertions_total": 8,
+  "pass_rate": 0.875,
+  "expectations": [
+    {
+      "text": "file_exists",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "correct_filename",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "hyundai_present",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "loi_mentioned",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "cho_quyet_dinh_status",
+      "passed": false,
+      "evidence": "file check"
+    },
+    {
+      "text": "vietnam_forum",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "8_contacts",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "no_chambers_noted",
+      "passed": true,
+      "evidence": "file check"
+    }
+  ]
+}

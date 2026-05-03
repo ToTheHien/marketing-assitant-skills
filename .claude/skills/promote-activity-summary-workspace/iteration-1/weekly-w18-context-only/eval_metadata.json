@@ -1,0 +1,46 @@
+{
+  "eval_id": 1,
+  "eval_name": "weekly-w18-context-only",
+  "prompt": "Tạo báo cáo xúc tiến đầu tư tuần này (Tuần 18, 28/04–02/05/2026). Trong tuần có 3 cuộc gặp: (1) Samsung C&T (Hàn Quốc, logistics) muốn thuê 5ha tại VSIP II — site visit hôm 29/04, họ đang quan tâm và sẽ gửi yêu cầu cụ thể; (2) Foxconn (Đài Loan, điện tử) online meeting 30/04 hỏi về khu công nghiệp MTPII — đang đàm phán giá; (3) Công ty Nhật chuyên sản xuất linh kiện ô tô (chưa tiết lộ tên) hỏi qua email về diện tích 2ha — mới tiếp cận. Ngoài ra có cuộc họp với KOCHAM hôm 02/05 về kết nạp thành viên mới, kết quả: 2 công ty Hàn tiềm năng được giới thiệu. Kế hoạch tuần tới: gửi proposal cho Samsung C&T, họp với JETRO 07/05.",
+  "assertions": [
+    {
+      "id": "docx_created",
+      "description": "Output is a .docx file that exists and is not empty",
+      "check": "file_exists_and_nonzero"
+    },
+    {
+      "id": "correct_filename",
+      "description": "File is named promote_activity_weekly_2026-W18.docx",
+      "check": "filename_match"
+    },
+    {
+      "id": "all_3_investors_present",
+      "description": "Report mentions Samsung C&T, Foxconn, and Japanese company (or [Cần bổ sung] for unnamed)",
+      "check": "content_contains_keywords",
+      "keywords": ["Samsung C&T", "Foxconn"]
+    },
+    {
+      "id": "pipeline_status_correct",
+      "description": "Samsung C&T = Đang quan tâm, Foxconn = Đang đàm phán, Japanese = Mới tiếp cận",
+      "check": "content_contains_keywords",
+      "keywords": ["Đang quan tâm", "Đang đàm phán", "Mới tiếp cận"]
+    },
+    {
+      "id": "kocham_section_present",
+      "description": "KOCHAM meeting is included in chambers section",
+      "check": "content_contains_keywords",
+      "keywords": ["KOCHAM"]
+    },
+    {
+      "id": "next_week_plan_present",
+      "description": "Section 5 / kế hoạch tuần tới includes Samsung C&T proposal and JETRO meeting",
+      "check": "content_contains_keywords",
+      "keywords": ["JETRO", "proposal"]
+    },
+    {
+      "id": "5_sections_structure",
+      "description": "Report has structured sections (summary, investor meetings, chambers, events, next week plan)",
+      "check": "qualitative"
+    }
+  ]
+}

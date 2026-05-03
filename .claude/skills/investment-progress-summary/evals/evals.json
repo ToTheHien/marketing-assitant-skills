@@ -1,0 +1,124 @@
+{
+  "skill_name": "investment-progress-summary",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Tạo báo cáo tiến độ đầu tư tuần cho tôi. Mode: weekly. Context: Tuần 18 (28/04 - 02/05/2026). Tuần này có 2 điểm nổi bật: Samsung SDI hoàn thành lắp đặt mái tòa A (tiến độ lên 60%), và Ryobi vẫn đang chờ giấy phép PCCC từ Sở Cảnh sát. LG Electronics bị chậm do thiếu vật liệu thép nhưng đã có kế hoạch nhập tuần sau. Kế hoạch tuần tới: Samsung kiểm tra nội thất, LG tiếp tục thi công sau khi có thép, Sankyu dự kiến bàn giao nhà xưởng.",
+      "expected_output": "File .docx báo cáo tiến độ đầu tư tuần 18 với đầy đủ 5 sections: Tóm tắt điều hành, Tổng quan tiến độ, Cập nhật chi tiết, Vướng mắc, Kế hoạch tuần tới. Có ít nhất 3 nhà đầu tư được đề cập.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "output_file_exists",
+          "description": "File .docx được tạo ra trong thư mục outputs",
+          "type": "file_exists"
+        },
+        {
+          "name": "file_is_docx",
+          "description": "File output có đuôi .docx",
+          "type": "file_extension_check",
+          "expected": ".docx"
+        },
+        {
+          "name": "mentions_samsung_sdi",
+          "description": "Báo cáo đề cập Samsung SDI",
+          "type": "content_contains",
+          "search_terms": ["Samsung SDI", "samsung"]
+        },
+        {
+          "name": "mentions_pccc_issue",
+          "description": "Báo cáo đề cập vướng mắc PCCC của Ryobi",
+          "type": "content_contains",
+          "search_terms": ["PCCC", "Ryobi", "giấy phép"]
+        },
+        {
+          "name": "has_next_week_plan",
+          "description": "Báo cáo có section kế hoạch tuần tới",
+          "type": "content_contains",
+          "search_terms": ["tuần tới", "kế hoạch", "plan"]
+        },
+        {
+          "name": "no_fabricated_numbers",
+          "description": "Số liệu % tiến độ Samsung khớp với context (60%)",
+          "type": "content_contains",
+          "search_terms": ["60%", "60 %"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Tôi cần báo cáo tiến độ đầu tư tuần. Đây là file dữ liệu tiến độ các nhà đầu tư: /home/thehien/Projects/becamex/marketing_assitance_w_claude/.claude/skill-creator-workspaces/investment-progress-summary-workspace/sample_data/investor_progress.csv. Mode: weekly. Kỳ báo cáo: Tuần 18, 28/04 - 02/05/2026.",
+      "expected_output": "File .docx báo cáo tuần với dữ liệu được đọc từ CSV. Phải có đủ 5 nhà đầu tư từ file CSV: Samsung SDI, LG Electronics, Sankyu, Nidec, Ryobi. Bảng tổng quan phải hiển thị đúng số liệu tiến độ và giải ngân từ file.",
+      "files": [
+        "/home/thehien/Projects/becamex/marketing_assitance_w_claude/.claude/skill-creator-workspaces/investment-progress-summary-workspace/sample_data/investor_progress.csv"
+      ],
+      "assertions": [
+        {
+          "name": "output_file_exists",
+          "description": "File .docx được tạo ra",
+          "type": "file_exists"
+        },
+        {
+          "name": "all_5_investors_present",
+          "description": "Tất cả 5 nhà đầu tư từ CSV được đề cập",
+          "type": "content_contains",
+          "search_terms": ["Samsung SDI", "LG Electronics", "Sankyu", "Nidec", "Ryobi"]
+        },
+        {
+          "name": "correct_investment_amounts",
+          "description": "Số liệu vốn đăng ký chính xác (120, 45, 30, 85, 55 triệu USD)",
+          "type": "content_contains_numbers",
+          "search_numbers": ["120", "45", "30", "85", "55"]
+        },
+        {
+          "name": "sankyu_90_percent",
+          "description": "Sankyu Vietnam có tiến độ 90% theo CSV",
+          "type": "content_contains",
+          "search_terms": ["90%", "Sankyu"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Làm giúp tôi báo cáo tiến độ đầu tư tháng 4/2026 nhé. mode monthly. Dữ liệu: Tháng 4 có 5 nhà đầu tư: Samsung SDI (120M USD, giải ngân 72M, tiến độ 60%), LG Electronics (45M USD, giải ngân 18M, tiến độ 40%, chậm do thiếu vật liệu), Sankyu Vietnam (30M USD, giải ngân 27M, tiến độ 90%, sắp hoàn thành), Nidec Vietnam (85M USD, giải ngân 51M, tiến độ 60%), Ryobi Die Casting (55M USD, giải ngân 11M, tiến độ 20%, vướng giấy phép PCCC). Tổng giải ngân tháng 4: 8.5 triệu USD. Kế hoạch tháng 5: Sankyu dự kiến vận hành, Samsung đạt 70%, Ryobi giải quyết xong PCCC.",
+      "expected_output": "File .docx báo cáo tháng với 7 sections đầy đủ. Trang bìa có tháng 4/2026. Bảng tổng quan 5 nhà đầu tư. Section tài chính có tổng giải ngân lũy kế (179M USD) và giải ngân tháng (8.5M USD). Section rủi ro đề cập vấn đề PCCC của Ryobi.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "output_file_exists",
+          "description": "File .docx tháng được tạo ra",
+          "type": "file_exists"
+        },
+        {
+          "name": "monthly_filename",
+          "description": "Tên file chứa 'monthly' và '2026-04'",
+          "type": "filename_contains",
+          "search_terms": ["monthly", "2026"]
+        },
+        {
+          "name": "cover_page_has_month",
+          "description": "Báo cáo đề cập tháng 4/2026",
+          "type": "content_contains",
+          "search_terms": ["Tháng 4", "4/2026", "04/2026"]
+        },
+        {
+          "name": "total_disbursement_correct",
+          "description": "Tổng giải ngân lũy kế 179 triệu USD được tính đúng",
+          "type": "content_contains",
+          "search_terms": ["179"]
+        },
+        {
+          "name": "monthly_disbursement_shown",
+          "description": "Giải ngân trong tháng 8.5M được ghi rõ",
+          "type": "content_contains",
+          "search_terms": ["8.5", "8,5"]
+        },
+        {
+          "name": "risk_section_has_pccc",
+          "description": "Section rủi ro đề cập vấn đề PCCC",
+          "type": "content_contains",
+          "search_terms": ["PCCC", "rủi ro", "risk"]
+        }
+      ]
+    }
+  ]
+}

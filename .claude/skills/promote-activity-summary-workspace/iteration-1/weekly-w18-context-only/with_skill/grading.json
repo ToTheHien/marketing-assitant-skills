@@ -1,0 +1,45 @@
+{
+  "run_id": "weekly-w18-context-only-with_skill",
+  "file": "/home/thehien/Projects/becamex/marketing_assitance_skills/.claude/skills/promote-activity-summary-workspace/iteration-1/weekly-w18-context-only/with_skill/outputs/promote_activity_weekly_2026-W18.docx",
+  "file_size_kb": 39,
+  "assertions_passed": 7,
+  "assertions_total": 7,
+  "pass_rate": 1.0,
+  "expectations": [
+    {
+      "text": "file_exists",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "correct_filename",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "samsung_ct_present",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "foxconn_present",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "pipeline_status_3way",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "kocham_present",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "next_week_jetro",
+      "passed": true,
+      "evidence": "file check"
+    }
+  ]
+}

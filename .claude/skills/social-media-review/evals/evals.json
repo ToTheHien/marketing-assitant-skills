@@ -1,0 +1,42 @@
+{
+  "skill_name": "social-media-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Hãy review bài đăng Facebook này cho khu công nghiệp của chúng tôi trước khi đăng:\n\n\"🏭 Khu Công Nghiệp VSIP III Bình Dương – Điểm đến lý tưởng cho các nhà đầu tư!\n\nVSIP III tọa lạc tại vị trí chiến lược, kết nối thuận lợi đến sân bay Quốc tế Long Thành và Cảng Cái Mép - Thị Vải. Chúng tôi cung cấp các giải pháp đầu tư tốt nhất với cơ sở hạ tầng đẳng cấp thế giới!\n\nLiên hệ ngay để được tư vấn mien phí!\n\n#KhuCongNghiep #VSIP #BinhDuong #ThueDat #IndustrialPark #FDI #NhaDauTu #Vietnam #CongNghiep #KCN #BatDongSanCongNghiep #DauTu #NhaXuong\"",
+      "expected_output": "Review đầy đủ 5 hạng mục + bảng hành động. Phát hiện: lỗi 'mien phí', clichés, quá nhiều hashtag. Bản sửa có từ khóa ngành (RBF/BTS/thuê đất) và mẹo link trong comment.",
+      "assertions": [
+        "Phát hiện lỗi chính tả 'mien phí' và sửa thành 'miễn phí' với lý do rõ ràng",
+        "Flag clichés 'tốt nhất' và 'đẳng cấp thế giới' là tuyên bố tuyệt đối thiếu căn cứ",
+        "Nhận xét 13 hashtag vượt tiêu chuẩn 3-5 của Facebook và giải thích lý do (giảm reach)",
+        "Bản đề xuất cải thiện chứa ít nhất một từ khóa ngành: 'thuê đất công nghiệp', 'nhà xưởng xây sẵn', 'RBF', hoặc 'BTS'",
+        "Có mẹo nền tảng về việc đặt link vào comment thay vì caption để tránh giảm organic reach",
+        "Output bằng tiếng Việt đầy đủ dấu thanh (không phải ASCII)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Check this LinkedIn post for me before I publish:\n\n\"Exciting news from VSIP Industrial Park!\n\nWe are proud to announce that we have welcomed over 50 new investors to our state-of-the-art industrial zone in Q1 2026, contributing to Vietnam's growing manufacturing sector.\n\nOur world-class infrastructure includes:\n- 24/7 power supply with backup generators  \n- Comprehensive waste water treatment facilities\n- Seamless connectivity to major highways and ports\n- Best-in-class security system\n\nInvesting in Vietnam industrial real estate has never been more attractive. Contact us today to explore investment opportunities that guarantee strong returns!\n\nWhat do you think about Vietnam's industrial real estate market? Share your thoughts below!\n\n#IndustrialPark #Vietnam #FDI #Manufacturing #IndustrialRealEstate #Investment #VSIP\"",
+      "expected_output": "Phát hiện: 4 clichés, compliance issue (guarantee returns), hook yếu. Bản sửa bằng tiếng Anh, chứa từ khóa 'land lease' hoặc 'ready-built factory'. Nhận xét bằng tiếng Việt đầy đủ dấu.",
+      "assertions": [
+        "Flag tất cả 4 clichés bị cấm: state-of-the-art, world-class, best-in-class, seamless",
+        "Flag 'guarantee strong returns' là CRITICAL — vi phạm quy định cam kết lợi nhuận đầu tư",
+        "Nhận xét hook 'Exciting news' yếu và giải thích tại sao không nên bắt đầu bằng tên công ty trên LinkedIn",
+        "Bản sửa đề xuất bằng tiếng Anh có chứa từ khóa 'land lease' hoặc 'ready-built factory'",
+        "Nhận xét (phần review, không phải bản sửa) được viết bằng tiếng Việt đầy đủ dấu thanh"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Review đoạn mở đầu bài viết website này cho trang landing page khu công nghiệp:\n\n# Khu Công Nghiệp Becamex VSIP – Cơ hội đầu tư hàng đầu\n\nKhu Công Nghiệp Becamex VSIP là một trong những khu công nghiệp lớn nhất và hiện đại nhất Việt Nam. Với diện tích lên đến 1.000 hecta, chúng tôi cung cấp đa dạng các giải pháp thuê đất và nhà xưởng phù hợp cho mọi nhu cầu của doanh nghiệp.\n\nĐặc biệt, Becamex VSIP sở hữu vị trí địa lý vô cùng thuận lợi tại Bình Dương, kết nối trực tiếp với:\n- Cao tốc TP.HCM - Thủ Dầu Một\n- Cảng Cái Mép (cách 80km)\n- Sân bay Tân Sơn Nhất (cách 50km)\n\nHãy liên hệ với chúng tôi để được tư vấn chi tiết về các gói đầu tư phù hợp nhất với doanh nghiệp của bạn.",
+      "expected_output": "Review SEO đầy đủ: từ khóa thiếu, meta description đề xuất cụ thể 120-160 ký tự, flag clichés tiếng Việt, nhận xét heading. Bản sửa có H1 với từ khóa và keyword ngành.",
+      "assertions": [
+        "Đề xuất meta description cụ thể 120-160 ký tự có chứa từ khóa 'thuê đất khu công nghiệp' hoặc 'khu công nghiệp Bình Dương'",
+        "Nhận xét H1 thiếu từ khóa tìm kiếm và đề xuất H1 cải thiện có từ khóa",
+        "Flag clichés tiếng Việt: 'hiện đại nhất' và/hoặc 'phù hợp nhất' là tuyên bố tuyệt đối",
+        "Gợi ý ít nhất 2 từ khóa quan trọng còn thiếu trong bài (ví dụ: RBF, BTS, ưu đãi thuế, thuê đất khu công nghiệp Bình Duong)",
+        "Output có đủ 5 hạng mục theo đúng format scorecard với điểm số từng mục"
+      ]
+    }
+  ]
+}

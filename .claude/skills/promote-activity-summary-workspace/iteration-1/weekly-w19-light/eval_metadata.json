@@ -1,0 +1,46 @@
+{
+  "eval_id": 3,
+  "eval_name": "weekly-w19-light",
+  "prompt": "Làm báo cáo xúc tiến tuần 19 (05/05–09/05/2026). Tuần này chủ yếu follow-up: gửi proposal cho 4 công ty, 1 site visit với Hyundai Engineering (Hàn, xây dựng khu nhà ở công nhân) kết quả tốt — họ sẽ làm LOI. Tham dự hội thảo 'Vietnam Investment Forum 2026' tại TP.HCM ngày 07/05 với vai trò diễn giả, thu 8 business cards. Chưa có cuộc họp phòng thương mại nào trong tuần.",
+  "assertions": [
+    {
+      "id": "docx_created",
+      "description": "Output is a valid .docx file",
+      "check": "file_exists_and_nonzero"
+    },
+    {
+      "id": "correct_filename",
+      "description": "File named promote_activity_weekly_2026-W19.docx",
+      "check": "filename_match"
+    },
+    {
+      "id": "hyundai_present",
+      "description": "Hyundai Engineering is mentioned",
+      "check": "content_contains_keywords",
+      "keywords": ["Hyundai"]
+    },
+    {
+      "id": "hyundai_status_cho_quyet_dinh",
+      "description": "Hyundai status is Chờ quyết định (about to sign LOI)",
+      "check": "content_contains_keywords",
+      "keywords": ["Chờ quyết định", "LOI"]
+    },
+    {
+      "id": "no_chambers_noted",
+      "description": "Chambers section explicitly notes no activities this week (not just omitted)",
+      "check": "qualitative"
+    },
+    {
+      "id": "vietnam_investment_forum_present",
+      "description": "Vietnam Investment Forum 2026 event on 07/05 is included",
+      "check": "content_contains_keywords",
+      "keywords": ["Vietnam Investment Forum", "07/05"]
+    },
+    {
+      "id": "8_contacts_from_event",
+      "description": "8 business cards / contacts from the forum is mentioned",
+      "check": "content_contains_keywords",
+      "keywords": ["8"]
+    }
+  ]
+}

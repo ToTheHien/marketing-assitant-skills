@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "skills": {
+    "gws-calendar": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "a5e322db61384d33d48e50db53cd6ff6cdcf25e929b8c4b63b5430f72c57f94a"
+    },
+    "gws-calendar-agenda": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "46156c7ad60c27e55cac136ac88e795544652fbff67c7400e8716cffd7e18e9f"
+    },
+    "gws-chat": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "7f31c502f6eacb1c448a6cdc33bf031ebc77a26c2e8198bc082c12d309058fb7"
+    },
+    "gws-docs-write": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "6f606bb4329bd8c1b1faaef43238b4b636c49667d16b82d911b6ab6f3031dddb"
+    },
+    "gws-drive": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "1635ef8ee6d0d5cf250dc71c820bec77c35e342746af87da081b1c1a55052d54"
+    },
+    "gws-gmail": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "77e07db313286182de63beeed63e55e4d0d86a5ab59f741b86b851eb68126b41"
+    },
+    "gws-gmail-send": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "70662f0051d1055254df43e4137d1690d1f0bc7afa09525573241dc4b1283c69"
+    },
+    "gws-modelarmor": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "fa165933d10796ebb605ecd0c6f0624095d8061f4083cc7f327a7296a59ae6b2"
+    },
+    "gws-modelarmor-create-template": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "e4b3c6ed514ddf80d755ce9d2397b44b91626dd2d7e211d6b47a67b88fda9691"
+    },
+    "gws-shared": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "5b7fdc40a38089bb5e40133068c95e5b2c313fcdbeb8a9373bb7898496d66115"
+    },
+    "gws-sheets-append": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "722218c506de040a6bf61d19cdf3131e2f7f3b3868972a9f2f56ba32d90eb060"
+    },
+    "gws-sheets-read": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "2e2273c1240a7a7857b23d06a6ec6e9b4eb5c3801c9537cf55298d5d7d188881"
+    },
+    "persona-exec-assistant": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "983865fea211dd1a521c0e9e05cb4363118a87a52336105ced6d78437d938b57"
+    }
+  }
+}

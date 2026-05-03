@@ -1,0 +1,19 @@
+Next:
+- Create Email handling skill & command => Done
+- Create social media post skill => Done
+- Create command for social media post skill => Done
+- Create command for email summary skill => Done
+- Create weekly & monthly report skill
+[] investment-progress => Done
+[] investment-promote-activity => Done
+- Check lại markitdown => Done
+- Create GWS guideline => Done
+- Create README => Done
+. Purpose
+. Structure (following gsd git)
+. How to setup
+- Public to github
+- Setup VScode for my wife
+- Create git acc for my wife
+- Pull repo
+- Test

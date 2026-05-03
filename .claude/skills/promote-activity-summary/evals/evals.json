@@ -1,0 +1,23 @@
+{
+  "skill_name": "promote-activity-summary",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Tạo báo cáo xúc tiến đầu tư tuần này (Tuần 18, 28/04–02/05/2026). Trong tuần có 3 cuộc gặp: (1) Samsung C&T (Hàn Quốc, logistics) muốn thuê 5ha tại VSIP II — site visit hôm 29/04, họ đang quan tâm và sẽ gửi yêu cầu cụ thể; (2) Foxconn (Đài Loan, điện tử) online meeting 30/04 hỏi về khu công nghiệp MTPII — đang đàm phán giá; (3) Công ty Nhật chuyên sản xuất linh kiện ô tô (chưa tiết lộ tên) hỏi qua email về diện tích 2ha — mới tiếp cận. Ngoài ra có cuộc họp với KOCHAM hôm 02/05 về kết nạp thành viên mới, kết quả: 2 công ty Hàn tiềm năng được giới thiệu. Kế hoạch tuần tới: gửi proposal cho Samsung C&T, họp với JETRO 07/05.",
+      "expected_output": "File promote_activity_weekly_2026-W18.docx với đầy đủ 5 sections: tóm tắt điều hành, bảng 3 cuộc gặp, section KOCHAM, section sự kiện (nếu có), kế hoạch tuần tới. Samsung C&T trạng thái 'Đang quan tâm', Foxconn 'Đang đàm phán', công ty Nhật 'Mới tiếp cận'.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Cần báo cáo xúc tiến đầu tư tháng 4/2026. Mode: monthly. Context: Tháng 4 là tháng cao điểm — tổng 12 cuộc gặp nhà đầu tư tiềm năng từ 6 quốc gia (Hàn, Nhật, Đài Loan, Singapore, Mỹ, Đức). Highlights: Tổ chức thành công Hội nghị Xúc tiến Đầu tư Becamex lần thứ 3 ngày 15/04 với 80 đại biểu, thu 15 leads. Đang đàm phán với 3 công ty lớn. Hoạt động phòng thương mại: họp định kỳ KCCI, KOCHAM, JETRO, 1 lần gặp EuroCham. Pipeline hiện tại: 5 công ty đang đàm phán, 4 đang quan tâm, 3 mới tiếp cận. Kế hoạch tháng 5: roadshow tại Seoul ngày 20/05, target 10 cuộc gặp mới.",
+      "expected_output": "File promote_activity_monthly_2026-04.docx với đầy đủ 7 sections bao gồm dashboard số liệu (12 cuộc gặp, 15 leads từ hội nghị), pipeline table với 12 công ty, section sự kiện có Hội nghị 15/04, phân tích tháng, và kế hoạch tháng 5.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Làm báo cáo xúc tiến tuần 19 (05/05–09/05/2026). Tuần này chủ yếu follow-up: gửi proposal cho 4 công ty, 1 site visit với Hyundai Engineering (Hàn, xây dựng khu nhà ở công nhân) kết quả tốt — họ sẽ làm LOI. Tham dự hội thảo 'Vietnam Investment Forum 2026' tại TP.HCM ngày 07/05 với vai trò diễn giả, thu 8 business cards. Chưa có cuộc họp phòng thương mại nào trong tuần.",
+      "expected_output": "File promote_activity_weekly_2026-W19.docx. Section phòng thương mại ghi rõ 'Không có hoạt động trong tuần'. Hyundai Engineering trạng thái 'Chờ quyết định' (vì sắp làm LOI). Section sự kiện có Vietnam Investment Forum. Section kế hoạch tuần tới có các follow-up đã được đề cập.",
+      "files": []
+    }
+  ]
+}

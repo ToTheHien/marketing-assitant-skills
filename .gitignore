@@ -1,0 +1,9 @@
+# File
+!Todo.txt
+!.claude/settings.local.json
+
+# Items inside folder
+documents/*
+email_summary/*
+investment_progress/*
+social_media/*

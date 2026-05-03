@@ -1,0 +1,50 @@
+{
+  "run_id": "monthly-context-only-without_skill",
+  "file": "/home/thehien/Projects/becamex/marketing_assitance_skills/.claude/skills/promote-activity-summary-workspace/iteration-1/monthly-context-only/without_skill/outputs/promote_activity_monthly_2026-04.docx",
+  "file_size_kb": 40,
+  "assertions_passed": 8,
+  "assertions_total": 8,
+  "pass_rate": 1.0,
+  "expectations": [
+    {
+      "text": "file_exists",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "correct_filename",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "12_meetings",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "15_leads",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "80_delegates",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "4_chambers",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "seoul_roadshow",
+      "passed": true,
+      "evidence": "file check"
+    },
+    {
+      "text": "cover_page_or_7sec",
+      "passed": true,
+      "evidence": "file check"
+    }
+  ]
+}

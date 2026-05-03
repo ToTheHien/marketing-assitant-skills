@@ -1,0 +1,52 @@
+{
+  "eval_id": 2,
+  "eval_name": "monthly-context-only",
+  "prompt": "Cần báo cáo xúc tiến đầu tư tháng 4/2026. Mode: monthly. Context: Tháng 4 là tháng cao điểm — tổng 12 cuộc gặp nhà đầu tư tiềm năng từ 6 quốc gia (Hàn, Nhật, Đài Loan, Singapore, Mỹ, Đức). Highlights: Tổ chức thành công Hội nghị Xúc tiến Đầu tư Becamex lần thứ 3 ngày 15/04 với 80 đại biểu, thu 15 leads. Đang đàm phán với 3 công ty lớn. Hoạt động phòng thương mại: họp định kỳ KCCI, KOCHAM, JETRO, 1 lần gặp EuroCham. Pipeline hiện tại: 5 công ty đang đàm phán, 4 đang quan tâm, 3 mới tiếp cận. Kế hoạch tháng 5: roadshow tại Seoul ngày 20/05, target 10 cuộc gặp mới.",
+  "assertions": [
+    {
+      "id": "docx_created",
+      "description": "Output is a valid .docx file",
+      "check": "file_exists_and_nonzero"
+    },
+    {
+      "id": "correct_filename",
+      "description": "File named promote_activity_monthly_2026-04.docx",
+      "check": "filename_match"
+    },
+    {
+      "id": "dashboard_numbers",
+      "description": "Report includes key metrics: 12 meetings, 6 countries, 15 leads, 80 delegates",
+      "check": "content_contains_keywords",
+      "keywords": ["12", "15", "80"]
+    },
+    {
+      "id": "pipeline_breakdown",
+      "description": "Pipeline shows 5 negotiating + 4 interested + 3 new = 12 total",
+      "check": "content_contains_keywords",
+      "keywords": ["5", "4", "3", "đàm phán"]
+    },
+    {
+      "id": "conference_15_04",
+      "description": "Hội nghị Xúc tiến Đầu tư Becamex lần thứ 3 on 15/04 is mentioned",
+      "check": "content_contains_keywords",
+      "keywords": ["Hội nghị", "15/04", "15"]
+    },
+    {
+      "id": "4_chambers_present",
+      "description": "KCCI, KOCHAM, JETRO, EuroCham all mentioned",
+      "check": "content_contains_keywords",
+      "keywords": ["KCCI", "KOCHAM", "JETRO", "EuroCham"]
+    },
+    {
+      "id": "plan_month_5",
+      "description": "Kế hoạch tháng 5 mentions Seoul roadshow on 20/05",
+      "check": "content_contains_keywords",
+      "keywords": ["Seoul", "roadshow", "20/05"]
+    },
+    {
+      "id": "7_sections_monthly_structure",
+      "description": "Monthly report has richer structure than weekly: dashboard, pipeline, analysis section",
+      "check": "qualitative"
+    }
+  ]
+}

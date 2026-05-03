@@ -1,0 +1,64 @@
+BÁO CÁO HOẠT ĐỘNG XÚC TIẾN ĐẦU TƯ — THÁNG 4/2026
+Được tạo tự động bởi skill promote-activity-summary
+Ngày tạo: 02/05/2026
+
+════════════════════════════════════════════════════════════
+TÓM TẮT NỘI DUNG BÁO CÁO
+════════════════════════════════════════════════════════════
+
+File output: promote_activity_monthly_2026-04.docx
+Mode: Monthly — Tháng 4/2026
+
+────────────────────────────────────────────────────────────
+DASHBOARD SỐ LIỆU
+────────────────────────────────────────────────────────────
+• Tổng số cuộc gặp nhà đầu tư tiềm năng : 12 cuộc gặp
+• Nhà đầu tư tiềm năng mới tiếp cận     : 3 công ty
+• Số dự án đang đàm phán                : 3 dự án (Samsung SDS, Sumitomo, Bosch)
+• Số sự kiện tổ chức / tham dự          : 1 (Hội nghị Xúc tiến Đầu tư lần 3)
+• Số hoạt động phòng thương mại         : 4 (KCCI, KOCHAM, JETRO, EuroCham)
+• Tổng quốc gia tiếp cận                : 6 (Hàn Quốc, Nhật Bản, Đài Loan, Singapore, Hoa Kỳ, Đức)
+
+────────────────────────────────────────────────────────────
+ĐIỂM NỔI BẬT
+────────────────────────────────────────────────────────────
+1. Hội nghị Xúc tiến Đầu tư Becamex lần 3 (15/04/2026): 80 đại biểu, thu 15 leads.
+2. Đang đàm phán với 3 tập đoàn lớn: Samsung SDS (Hàn), Sumitomo (Nhật), Bosch (Đức).
+3. Họp định kỳ duy trì với KCCI, KOCHAM, JETRO, EuroCham.
+4. Pipeline tổng: 5 đàm phán | 4 quan tâm | 3 mới tiếp cận.
+
+────────────────────────────────────────────────────────────
+PIPELINE TRẠNG THÁI (theo màu chuẩn Becamex)
+────────────────────────────────────────────────────────────
+• Đang đàm phán  (#FFFF00 – Vàng) : 5 công ty
+• Đang quan tâm  (#92D050 – Xanh lá): 4 công ty
+• Mới tiếp cận   (#D6E4F0 – Xanh nhạt): 3 công ty
+
+────────────────────────────────────────────────────────────
+KẾ HOẠCH THÁNG 5
+────────────────────────────────────────────────────────────
+• Roadshow tại Seoul ngày 20/05/2026 — target 10 cuộc gặp mới.
+• Follow-up toàn bộ 15 leads từ Hội nghị tháng 4.
+• Tiếp tục đàm phán Samsung SDS, Sumitomo, Bosch.
+• Gửi proposal cho Bosch qua EuroCham trước 10/05.
+
+────────────────────────────────────────────────────────────
+CẤU TRÚC FILE .DOCX (7 section)
+────────────────────────────────────────────────────────────
+- Trang bìa
+- Section 1: Tóm tắt tháng (dashboard + điểm nổi bật + so sánh)
+- Section 2: Pipeline nhà đầu tư tiềm năng (bảng + phân tích trạng thái)
+- Section 3: Chi tiết hoạt động theo nhà đầu tư (Samsung SDS, Sumitomo, Bosch)
+- Section 4: Hoạt động phòng thương mại & hiệp hội (KCCI, KOCHAM, JETRO, EuroCham)
+- Section 5: Sự kiện xúc tiến đầu tư (Hội nghị lần 3)
+- Section 6: Phân tích & đánh giá tháng
+- Section 7: Kế hoạch tháng 5/2026
+- Phê duyệt & phân phối
+
+════════════════════════════════════════════════════════════
+LƯU Ý
+════════════════════════════════════════════════════════════
+Các mục đánh dấu [Cần bổ sung] trong báo cáo cần được điền bổ sung
+bởi đội ngũ xúc tiến đầu tư trước khi trình lãnh đạo.
+Các mục đó bao gồm: tên công ty chưa xác định, quy mô dự án,
+người phụ trách cụ thể, và địa điểm chi tiết một số sự kiện.

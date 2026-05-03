@@ -1,0 +1,54 @@
+BÁO CÁO TÓM TẮT — promote_activity_monthly_2026-04.docx
+========================================================
+Ngày tạo : 02/05/2026
+Công cụ  : python-docx (thủ công, không dùng skill)
+Kỳ báo cáo: Tháng 4/2026
+
+
+CÁC PHẦN ĐÃ ĐƯA VÀO BÁO CÁO
+------------------------------
+
+I. Tổng quan chỉ số (KPI Summary)
+   - Bảng KPI 6 chỉ số nổi bật: số cuộc gặp, số quốc gia, hội nghị,
+     đại biểu, leads mới, tổng pipeline.
+
+II. Điểm nổi bật tháng 4/2026 (Highlights)
+   - Hội nghị XTĐT Becamex lần 3 (15/04/2026): 80 đại biểu, 15 leads.
+   - 12 cuộc gặp NĐT từ 6 quốc gia: Hàn, Nhật, Đài Loan, Singapore, Mỹ, Đức.
+   - 3 công ty lớn đang đàm phán tích cực (KST/HQ, Nippon Medical/JP,
+     TSMC Supplier/TW).
+
+III. Chi tiết các cuộc gặp nhà đầu tư (Meeting Log)
+   - Bảng 12 hàng gồm: STT, Quốc gia, Công ty, Ngày gặp,
+     Nội dung chính, Trạng thái.
+
+IV. Hoạt động Phòng Thương mại & Hiệp hội
+   - KCCI, KOCHAM, JETRO (họp định kỳ) + EuroCham (gặp không định kỳ).
+   - Bảng 4 hàng với kết quả cụ thể từng cuộc họp.
+
+V. Trạng thái Pipeline đầu tư
+   - 12 công ty: Đàm phán (5) / Quan tâm (4) / Mới tiếp cận (3).
+   - Bảng pipeline gồm: Công ty, Quốc gia, Ngành, Quy mô DT dự kiến,
+     Giai đoạn, Người phụ trách.
+
+VI. Khó khăn & Kiến nghị
+   - 4 khó khăn nhận diện (thủ tục, hạ tầng, tài liệu tiếng Đức, nhân lực).
+   - 4 kiến nghị/đề xuất hành động cụ thể.
+
+VII. Kế hoạch hành động tháng 5/2026
+   - Bảng 6 hoạt động trọng tâm: Roadshow Seoul 20/05 (target 10 cuộc gặp),
+     follow-up pipeline, xử lý 15 leads, họp nội bộ, tài liệu tiếng Đức,
+     JETRO B2B matchmaking.
+
+Khối ký tên: Người lập báo cáo & Trưởng Ban XTĐT.
+
+
+ĐỊNH DẠNG & THIẾT KẾ
+----------------------
+- Màu chủ đạo: Navy blue (#1A376E) + Orange accent (#ED7D31) — nhận diện Becamex.
+- Font: Times New Roman, khổ A4, lề chuẩn.
+- Header banner bảng 2 cột: thông tin tổ chức + tiêu đề báo cáo.
+- Section header dạng dải màu xanh với chữ trắng in hoa.
+- Bảng màu xen kẽ (alternate rows) cho dễ đọc.
+- Cột "Giai đoạn" pipeline được tô màu theo trạng thái:
+    Đàm phán = vàng, Quan tâm = xanh lá nhạt, Mới tiếp cận = xanh dương nhạt.
